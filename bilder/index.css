@@ -33,7 +33,7 @@ main {
     height: 300px;
     cursor: pointer;
     transform-origin: center bottom;
-    transform: rotateX(70deg);
+    transform: rotateX(70deg) translateY(0);
     transition: 2s;
 }
 
