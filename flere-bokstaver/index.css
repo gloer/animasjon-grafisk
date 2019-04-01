@@ -1,0 +1,57 @@
+body {
+    background-color: black;
+    color: cyan;
+    margin: 0;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+}
+
+/* Definerer en animasjon */
+@keyframes dukkOpp {
+    0% {
+        opacity: 0;
+        transform: scale(4);        
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);        
+    }
+}
+
+span {
+    /* Hvis dere skal animere span-elementr */
+    /* er det lurt å bruke inline-block */
+    display: inline-block;    
+    /* forwards gjør at amnimasjonen blir som */
+    /* den er på slutten */
+    animation: dukkOpp 6s forwards;   
+    /* Hvor mange skal animasjonen gjentas */ 
+    animation-iteration-count: infinite;
+
+    padding: 16px;
+
+    /* Skal den forover, bakover eller annenhver gang */
+    animation-direction: alternate;
+    opacity: 0;
+}
+
+span:nth-child(1) { animation-delay: 1s; }
+span:nth-child(2) { animation-delay: 1.2s; }
+span:nth-child(3) { animation-delay: 1.4s; }
+span:nth-child(4) { animation-delay: 1.6s; }
+span:nth-child(5) { animation-delay: 1.6s; }
+span:nth-child(6) { animation-delay: 1.8s; }
+span:nth-child(7) { animation-delay: 2.0s; }
+span:nth-child(8) { animation-delay: 2.2s; }
+span:nth-child(9) { animation-delay: 2.4s; }
+span:nth-child(10) { animation-delay: 2.6s; }
+span:nth-child(11) { animation-delay: 2.8s; }
+span:nth-child(12) { animation-delay: 3s; }
+
+

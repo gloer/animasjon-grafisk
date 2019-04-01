@@ -30,4 +30,13 @@ main {
 
 .bokstav {
     color: steelblue;
+    transition: 2s;
+    cursor: pointer;
+    opacity: 0.1;
+}
+
+.bokstav:hover {
+    color: darkblue;
+    transform: scaleX(12) scaleY(2) rotate(1turn);
+    opacity: 1;
 }
