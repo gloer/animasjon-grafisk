@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bilder {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 16px;
+    perspective: 800px;
+}
+
+@keyframes snurrInn {
+    from {
+        transform: rotateX(360deg) translateY(-600px);
+    }
+}
+
+.bilder div {
+    animation: snurrInn 4s;
+    background-color: red;
+    background-image: url("https://static.standard.co.uk/s3fs-public/thumbnails/image/2017/01/12/13/venice.jpg?w968");
+    background-size: cover;
+    width: 200px;
+    height: 300px;
+    cursor: pointer;
+    transform-origin: center bottom;
+    transform: rotateX(70deg);
+    transition: 2s;
+}
+
+.bilder div:hover {
+    transform: rotateX(0);
+    z-index: 1;
+}
+
+.bilder div:nth-child(1):hover {
+    transform: rotateX(360deg) rotateY(22deg);
+}
+.bilder div:nth-child(2):hover {
+    transform: rotateX(0) rotateY(18deg);
+}
+.bilder div:nth-child(4):hover {
+    transform: rotateX(0) rotateY(-22deg);
+}
+.bilder div:nth-child(5):hover {
+    transform: rotateX(0) rotateY(-18deg);
+}
+
