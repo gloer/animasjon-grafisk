@@ -1,0 +1,33 @@
+html {
+    /* 16px er normalt sett 100% */
+    font-size: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: olivedrab;
+    color: whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 4rem;
+}
+
+main {
+    background-color: darkorange;
+    padding: 2rem; /* Luft inni boksen */
+    min-height: 100vh;
+    /* margin: 4rem;  Luft utenfor */
+
+    /* Triks for å midtstille innhold */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Disse linjene vil alltid midstille innhold */
+}
+
+.bokstav {
+    color: steelblue;
+}
